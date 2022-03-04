@@ -1,0 +1,47 @@
+create table state 
+(
+STATE_ID varchar(255) not null,
+STATE_NAME varchar(255), 
+COUNTRY_ID varchar(255), 
+primary key (STATE_ID),
+foreign key (COUNTRY_ID ) REFERENCES Country(COUNTRY_ID )
+);
+
+
+INSERT INTO `state` (`STATE_ID`, `STATE_NAME`,`COUNTRY_ID`) VALUES
+('1', 'Andaman & Nicobar [AN]', '1'),
+('2', 'Andhra Pradesh [AP]', '1'),
+('3', 'Arunachal Pradesh [AR]', '1'),
+('4', 'Assam [AS]', '1'),
+('5', 'Bihar [BH]', '1'),
+('6', 'Chandigarh [CH]', '1'),
+('7', 'Chhattisgarh [CG]', '1'),
+('8', 'Dadra & Nagar Haveli [DN]', '1'),
+('9', 'Daman & Diu [DD]', '1'),
+('10', 'Delhi [DL]', '1'),
+('11', 'Goa [GO]', '1'),
+('12', 'Gujarat [GU]', '1'),
+('13', 'Haryana [HR]', '1'),
+('14', 'Himachal Pradesh [HP]', '1'),
+('15', 'Jammu & Kashmir [JK]', '1'),
+('16', 'Jharkhand [JH]', '1'),
+('17', 'Karnataka [KR]', '1'),
+('18', 'Kerala [KL]', '1'),
+('19', 'Lakshadweep [LD]', '1'),
+('20', 'Madhya Pradesh [MP]', '1'),
+('21', 'Maharashtra [MH]', '1'),
+('22', 'Manipur [MN]', '1'),
+('23', 'Meghalaya [ML]', '1'),
+('24', 'Mizoram [MM]', '1'),
+('25', 'Nagaland [NL]', '1'),
+('26', 'Orissa [OR]', '1'),
+('27', 'Pondicherry [PC]', '1'),
+('28', 'Punjab [PJ]', '1'),
+('29', 'Rajasthan [RJ]', '1'),
+('30', 'Sikkim [SK]', '1'),
+('31', 'Tamil Nadu [TN]', '1'),
+('32', 'Tripura [TR]', '1'),
+('33', 'Uttar Pradesh [UP]', '1'),
+('34', 'Uttaranchal [UT]', '1'),
+('35', 'West Bengal [WB]','1'),
+('36', 'TELANGANA [TG]', '1');
